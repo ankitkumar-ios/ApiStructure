@@ -11,9 +11,13 @@ class ViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view.
+		apiCalling()
 	}
 
-
+	func apiCalling(){
+		ApiClient.shared.login { loggedInUserModel in
+			//do something
+		}
+	}
 }
 
