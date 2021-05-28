@@ -17,6 +17,8 @@
 		BCBAAC7C2660057B00BD6544 /* LoggedInUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAAC7B2660057B00BD6544 /* LoggedInUserModel.swift */; };
 		BCBAAC902660723800BD6544 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAAC8F2660723800BD6544 /* FeedViewController.swift */; };
 		BCBAAC922660729A00BD6544 /* FeedItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAAC912660729A00BD6544 /* FeedItemsModel.swift */; };
+		BCBAAC99266074AC00BD6544 /* ApiFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAAC98266074AC00BD6544 /* ApiFeed.swift */; };
+		BCBAAC9B266074B500BD6544 /* ApiLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAAC9A266074B500BD6544 /* ApiLogin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		BCBAAC882660710500BD6544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCBAAC8F2660723800BD6544 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		BCBAAC912660729A00BD6544 /* FeedItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsModel.swift; sourceTree = "<group>"; };
+		BCBAAC98266074AC00BD6544 /* ApiFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFeed.swift; sourceTree = "<group>"; };
+		BCBAAC9A266074B500BD6544 /* ApiLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLogin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,23 +74,13 @@
 				BCBAAC64266001D700BD6544 /* AppDelegate.swift */,
 				BCBAAC66266001D700BD6544 /* SceneDelegate.swift */,
 				BCBAAC8E2660715C00BD6544 /* Controller */,
-				BCBAAC78266004E600BD6544 /* ApiClient.swift */,
-				BCBAAC7A2660056200BD6544 /* Model */,
+				BCBAAC93266073F400BD6544 /* ApiModule */,
 				BCBAAC6A266001D700BD6544 /* Main.storyboard */,
 				BCBAAC6D266001D900BD6544 /* Assets.xcassets */,
 				BCBAAC6F266001D900BD6544 /* LaunchScreen.storyboard */,
 				BCBAAC72266001D900BD6544 /* Info.plist */,
 			);
 			path = ApiStructure;
-			sourceTree = "<group>";
-		};
-		BCBAAC7A2660056200BD6544 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				BCBAAC7B2660057B00BD6544 /* LoggedInUserModel.swift */,
-				BCBAAC912660729A00BD6544 /* FeedItemsModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		BCBAAC852660710500BD6544 /* ApiStructureUITests */ = {
@@ -101,10 +95,38 @@
 		BCBAAC8E2660715C00BD6544 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BCBAAC68266001D700BD6544 /* ViewController.swift */,
-				BCBAAC8F2660723800BD6544 /* FeedViewController.swift */,
+				BCBAAC972660748E00BD6544 /* FeedModule */,
+				BCBAAC962660748500BD6544 /* LoginModule */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		BCBAAC93266073F400BD6544 /* ApiModule */ = {
+			isa = PBXGroup;
+			children = (
+				BCBAAC78266004E600BD6544 /* ApiClient.swift */,
+			);
+			path = ApiModule;
+			sourceTree = "<group>";
+		};
+		BCBAAC962660748500BD6544 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				BCBAAC7B2660057B00BD6544 /* LoggedInUserModel.swift */,
+				BCBAAC68266001D700BD6544 /* ViewController.swift */,
+				BCBAAC9A266074B500BD6544 /* ApiLogin.swift */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		BCBAAC972660748E00BD6544 /* FeedModule */ = {
+			isa = PBXGroup;
+			children = (
+				BCBAAC912660729A00BD6544 /* FeedItemsModel.swift */,
+				BCBAAC8F2660723800BD6544 /* FeedViewController.swift */,
+				BCBAAC98266074AC00BD6544 /* ApiFeed.swift */,
+			);
+			path = FeedModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +204,9 @@
 				BCBAAC67266001D700BD6544 /* SceneDelegate.swift in Sources */,
 				BCBAAC79266004E600BD6544 /* ApiClient.swift in Sources */,
 				BCBAAC922660729A00BD6544 /* FeedItemsModel.swift in Sources */,
+				BCBAAC9B266074B500BD6544 /* ApiLogin.swift in Sources */,
 				BCBAAC902660723800BD6544 /* FeedViewController.swift in Sources */,
+				BCBAAC99266074AC00BD6544 /* ApiFeed.swift in Sources */,
 				BCBAAC7C2660057B00BD6544 /* LoggedInUserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

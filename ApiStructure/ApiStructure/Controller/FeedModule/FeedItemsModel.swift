@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct LoadFeedItems {
+struct FeedItemsModel {
 	
 }

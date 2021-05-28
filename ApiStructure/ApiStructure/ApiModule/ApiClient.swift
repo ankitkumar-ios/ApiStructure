@@ -10,7 +10,6 @@ import Foundation
 class ApiClient {
 	static let shared = ApiClient()
 	private init(){}
-		
-	func login(completion:(LoggedInUserModel)-> Void) {}
-	func loadFeed(completion:([FeedItemsModel])-> Void) {}
+	
+	func execute(_ :URLRequest, completion:(Data)->Void) {}	
 }
