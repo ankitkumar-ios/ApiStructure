@@ -12,4 +12,5 @@ class ApiClient {
 	private init(){}
 		
 	func login(completion:(LoggedInUserModel)-> Void) {}
+	func loadFeed(completion:([FeedItemsModel])-> Void) {}
 }

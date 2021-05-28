@@ -8,15 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+	//Create a class variable so we can use property injection for UI Test
+	var api = ApiClient.shared
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		apiCalling()
 	}
 
 	func apiCalling(){
-		ApiClient.shared.login { loggedInUserModel in
-			//do something
+		api.login { loggedInUserModel in
+			//show Feed screen 
 		}
 	}
 }
