@@ -9,7 +9,8 @@ import Foundation
 
 class ApiClient {
 	static let shared = ApiClient()
-	private init(){}
+	//this is singelton with (small s)
+	init(){}
 	
 	func execute(_ :URLRequest, completion:(Data)->Void) {}	
 }

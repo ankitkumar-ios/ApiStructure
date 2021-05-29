@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 	//Create a class variable so we can use property injection for UI Test
-	var api = ApiClient.shared
+	var api = ApiLogin()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()

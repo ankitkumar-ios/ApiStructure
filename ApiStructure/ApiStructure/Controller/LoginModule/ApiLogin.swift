@@ -7,7 +7,14 @@
 
 import Foundation
 
-extension ApiClient{
+class ApiLogin: ApiClient{
+	
 	//This will call the main Api client execute method
-	func login(completion:(LoggedInUserModel)-> Void) {}
+	func login(completion:(LoggedInUserModel)-> Void) {
+		
+		ApiClient.shared.execute(URLRequest.init(url: URL.init(string: "")!)) { data in
+			completion(LoggedInUserModel.init())
+		}
+		
+	}
 }

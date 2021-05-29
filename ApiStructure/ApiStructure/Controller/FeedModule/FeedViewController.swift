@@ -9,7 +9,7 @@ import UIKit
 
 class FeedViewController: UIViewController {
 	//Create a class variable so we can use property injection for UI Test
-	var api = ApiClient.shared
+	var api = ApiFeed()
 	
     override func viewDidLoad() {
         super.viewDidLoad()
